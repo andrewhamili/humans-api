@@ -73,6 +73,8 @@
                 $apiResponse->badRequest(array('message'=>'Invalid parameters passed'));
             }
         }
+    }else if($method=="OPTIONS"){
+        $apiResponse->ok(array());
     }else{
         $apiResponse->methodNotAllowed(array());
     }
